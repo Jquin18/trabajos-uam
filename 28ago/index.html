@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js libraries</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head borde">
+            <p>Header</p>
+        </header>
+        <main class="main borde">
+            <h1>Albumes de joji</h1>
+            <p>La música de Joji se caracteriza por una fusión de géneros que incluyen R&B, lo-fi, trip-hop, folk, trap y electrónica. A lo largo de sus álbumes, Joji ha explorado diferentes estilos mientras mantiene una sonoridad melancólica y atmosférica distintiva.
+            Su primer EP, In Tongues, lanzado en 2017, presentó un estilo que se inclinaba hacia el lo-fi y el trip-hop, con una producción minimalista y letras introspectivas. Este trabajo sentó las bases para su estilo característico, que combina elementos melancólicos y emocionales. En 2018, su álbum debut, BALLADS 1, consolidó su identidad como músico, destacándose por temas como "Slow Dancing in the Dark", que encapsulan la vulnerabilidad y el desamor.
+                Con su segundo álbum, Nectar, lanzado en 2020, Joji comenzó a experimentar con una variedad más amplia de géneros, incluyendo folk, trap y electrónica. Este álbum mostró una producción más elaborada y una narrativa más compleja en sus videos musicales, como se puede ver en "Gimme Love" y "Sanctuary". La mezcla de ritmos ágiles y baladas melancólicas permitió a Joji explorar diferentes emociones y estilos, ampliando así su atractivo.
+                En su más reciente trabajo, SMITHEREENS, lanzado en 2022, Joji continuó esta tendencia de diversificación, incorporando elementos de pop y rock, mientras mantenía su distintivo enfoque melódico y lírico. Temas como "Glimpse of Us" se volvieron virales, destacando su capacidad para conectar con el público a través de letras que exploran la tristeza y la nostalgia.</p>
+            <div id="my-div"></div>
+        </main>
+        <aside class="lado borde">
+            <p>Aside</p>
+        </aside>
+        <footer class="pie borde">
+            <p>Footer</p>
+        </footer>
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+      new Vivus('my-div', {duration: 100, type: 'oneByOne', file: 'img/trazo-2.svg'},);
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal().reveal('.head', { delay: 200, distance: '150%', origin: 'top'});
+        ScrollReveal().reveal('.main', { delay: 500, scale: 0.85 });
+        ScrollReveal().reveal('.lado', { delay: 1000, rotate: { x: 20, z: 20 }});
+        ScrollReveal().reveal('.pie', { delay: 1200, distance: '150%', origin: 'bottom', });
+    </script>
+</body>
+</html>
